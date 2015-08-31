@@ -26,9 +26,6 @@
 					<ul class="actions">
 						<!-- <li><a href="#" class="button special icon fa-download">Download</a></li> -->
 						<li><a href="https://www.youtube.com/channel/UCTeG6j56LAPONUuPQZ0L93w" class="button special icon fa-youtube">Youtube Channel</a></li>
-						<li><a href="https://www.twitch.tv/cwaddict" class="button special icon fa-twitch">Twitch Live stream</a></li>
-					</ul>
-					<ul class="actions">
 						<li><a href="#one" class="button icon fa-chevron-down scrolly">Learn More</a></li>
 					</ul>
 				</div>
@@ -42,14 +39,10 @@
 					<!-- <div class="row"> -->
 					<p>
 						The ADX clan was created on <a href="https://www.youtube.com/watch?v=rjGUP4e7q00">31 July 2015</a>. We are a group of casual players who love the <a href="http://www.kongregate.com/games/tfender/contract-wars#">Contract Wars game</a>. 
-						Most of our progress is documented by the leader <a href="http://www.kongregate.com/accounts/cwaddict/">cwaddict</a> who is recording all his gameplay sessions, also doing them on <a href="https://www.twitch.tv/cwaddict">live stream</a>, and uploading them to <a href="https://www.youtube.com/channel/UCTeG6j56LAPONUuPQZ0L93w">youtube</a>.
+						Most of our progress is documented by the leader <a href="http://www.kongregate.com/accounts/cwaddict/">cwaddict</a> who is recording all his gameplay sessions and uploading them on <a href="https://www.youtube.com/channel/UCTeG6j56LAPONUuPQZ0L93w">youtube</a>.
 					</p>
 					<p>
 						We did a sky-rocket start, we were climbing up the latter from position 30,000 to top 700 within <a href="https://www.youtube.com/channel/UCTeG6j56LAPONUuPQZ0L93w/search?query=adx">21 days</a>. 
-					</p>
-					<p>
-						cwaddict is the first person who live-streams Contract Wars for the community. <br />
-						"Nice to be the first, let's play!" ;-)
 					</p>
 					
 				</header>
@@ -64,7 +57,7 @@
 
 			<section id="members" class="wrapper style2 special">
 				<header class="major">
-					<h2 id="memberheading">ADX clan members</h2>
+					<h2>ADX clan members</h2>
 					<p style="font-size:13px;color:#33F;">Click on the table heading to sort.</p>
 					
 					<div class="table-wrapper">
@@ -102,7 +95,7 @@
 							<td>molokozor</td>
 							<td><a href="https://www.youtube.com/user/molokozor">molokozor</a></td>
 							<td>2015-08-03</td>
-							<td>Switzerland</td>
+							<td>...</td>
 							<td>UTC +2</td>
 						</tr>
 						<tr>
@@ -246,30 +239,16 @@
 							<td></td>
 						</tr>
 						<tr>
+							<td title="Second account of TheFinalKiller">Player (h. hulk61920)</td>
+							<td></td>
+							<td>2015-08-24</td>
+							<td>United Arab Emirates</td>
+							<td>UTC +4</td>
+						</tr>
+						<tr>
 							<td>vote4votes</td>
 							<td></td>
 							<td>2015-08-24</td>
-							<td>...</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>Atkins (P. PanzerAtkins)</td>
-							<td></td>
-							<td>2015-08-30</td>
-							<td>...</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>Darcaufeu</td>
-							<td></td>
-							<td title="around">2015-08-27</td>
-							<td>...</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td><a href="http://www.kongregate.com/accounts/lemongaming10/">XxLemonGaming10</a></td>
-							<td></td>
-							<td title="around">2015-08-30</td>
 							<td>...</td>
 							<td></td>
 						</tr>
@@ -338,10 +317,15 @@
 					</section>
 					<section class="">
 						<div class="content">
-							<h3>Recent Stuff: Live Stream</h3>
+							<h3>Recent Stuff: Video Wars contest</h3>
 							<p>
-								We do some live streamings using twitch.tv and Open Broadcaster Software. The beginning :)
+								Until 2015-08-25 there is a video wars contest at <a href="http://www.kongregate.com/forums/2522-general/topics/524650-dev-video-wars-contest-with-camos">kongregate.com</a>. You can win up to 1000 GP. Feel free to add your own video, win the GP, and donate some of the GP to the clan. cwaddict submitted already some videos, see the <a href="https://www.youtube.com/playlist?list=PLDECvCNXZ2WmU5rA11cP8XWSpPuiz52Jf">compilation playlist</a>.
 							</p>
+							<div class="image fit">
+								<a href="http://www.kongregate.com/forums/2522-general/topics/524650-dev-video-wars-contest-with-camos">
+									<img src="images/2015-08-16-video-contests.jpg" alt="" />
+								</a>
+							</div>
 						</div>
 					</section>
 					
@@ -363,12 +347,6 @@
 							</ul>
 						</div>
 					</section>
-
-
-					<section class="">
-						<div class="image"><img src="images/teamkillers.jpg" alt="teamkillers" /></div>
-					</section>
-
 				</div>
 			</section>
 
@@ -730,12 +708,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script type="text/javascript">
 			$(document).ready(function(){
 			
-				/*
-				$('table.members tbody tr').not('th').each(function(idx){
-					$(this).children(":eq(0)").html(idx + 1);
-				});
-				*/
-				
 				$('th').click(function(){
 					var table = $(this).parents('table').eq(0)
 					var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
@@ -752,9 +724,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
 
 				$('th:first').trigger('click');
-				
-				var membercount = $('table.members tr').length-1;
-				$('#memberheading').text( membercount+' '+$('#memberheading').text() );
 			});
 			</script>
 	</body>
